@@ -104,28 +104,46 @@ li {
   margin: 0 auto;
 }
 /*=================================
-  Header styling starts here
-=================================*/
-
-
-
-
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
-
-/*=================================
   main styling starts here
 =================================*/
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #663399;
+}
 
+.btn,
+.notify-box {
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  color: #663399;
+  font-weight: 600;
+}
 
+.notification {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
 
+.notify-box.purple {
+  color: #663399;
+}
 
+.notify-box.red {
+  color: red;
+}
 
-
-
+.notify-box.green {
+  color: green;
+}
 
 /*=================================
   main styling ends here
@@ -134,12 +152,6 @@ li {
 /*=================================
   footer styling starts here
 =================================*/ 
-
-
-
-
-
-
 
  /*=================================
   footer styling ends here
