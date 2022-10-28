@@ -100,37 +100,48 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 100%; 
+  height: 100vh;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 /*=================================
   main styling starts here
 =================================*/
-.container {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #663399;
-}
 
-.btn,
-.notify-box {
+.container{ background-color: #663399; }
+
+.btn {
   padding: 15px;
   border-radius: 5px;
   border: none;
   background-color: #fff;
   color: #663399;
+  font-size: 17px;
   font-weight: 600;
 }
 
-.notification {
+.notify-box {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #663399;
+  font-weight: 600;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
+  transition: all .4s ease-out;
 }
 
 .notify-box.purple {
@@ -143,6 +154,15 @@ li {
 
 .notify-box.green {
   color: green;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: absolute;
+  right: 2%;
+  bottom: 2%;
 }
 
 /*=================================
